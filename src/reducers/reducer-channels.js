@@ -1,16 +1,17 @@
+// Hardcoded data
 export default function() {
   return [
     {
       id: 1,
       userName: 'Alvin',
-      channelName: 'Alvy'
+      channelName: 'Alvy',
+      followers: 5
     },
     {
       id: 2,
       userName: 'Billy',
-      channelName: 'Biwwie'
+      channelName: 'Biwwie',
+      followers: 7
     }
   ]
 }
-
-// Hardcoded data
