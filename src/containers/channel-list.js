@@ -32,5 +32,3 @@ function mapStateToProps(state) {
 
 // Connect channel list along with data from store. Makes component 'smart'
 export default connect(mapStateToProps)(ChannelList);
-
-// branch test
