@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import channelReducer from './reducer-channels';
 
-const rootReducer = combineReducers({
-  state: (state = {}) => state
+const combinedReducers = combineReducers({
+  channels: channelReducer
 });
 
-export default rootReducer;
+export default combinedReducers;
