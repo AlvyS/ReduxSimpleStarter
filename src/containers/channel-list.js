@@ -2,13 +2,21 @@ import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-class channelList extends Component {
+class ChannelList extends Component {
+
+  createChannelList() {
+    return this.props.channels.map((channel) => {
+      return (
+        <li key={channel.id}> {channel.userName} {channel.channelName} </li>
+      );
+    })
+  }
 
   render() {
     return (
       <ul>
-        <li>channelList one</li>
-        <li>channelList two</li>
+        <li>hardcoded channel one</li>
+        {this.createChannelList()}
       </ul>
     );
   }
@@ -23,4 +31,4 @@ function mapStateToProps(state) {
 }
 
 // Connect channel list along with data from store. Makes component 'smart'
-export default connect(mapStateToProps)(channelList);
+export default connect(mapStateToProps)(ChannelList);
