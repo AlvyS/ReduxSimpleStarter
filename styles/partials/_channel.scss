@@ -8,25 +8,30 @@
 
   .channel-card-container-heading{
     text-align: center;
+    // padding-bottom: 1em;
     border-bottom: .2em dashed;
   }
 
   .channel-card-container-body {
+    position: relative;
     .channel-logo {
       position: absolute;
       border-radius: 0 0 0 .5em;
       left: 0;
       bottom: 0;
-      height: 80%;
-      width: 25%;
+      height: 100%;
+      width: 30%;
     }
     .text-container {
-      padding-left: 5em;
+      display: float;
+      padding-left: 7em;
       text-align: center;
       .channel-name{
-
+        padding: .3em 0 .3em 0;
+        margin: 0;
       }
       .channel-game{
+        word-wrap: break-word;
 
       }
       .channel-followers{

@@ -14,13 +14,21 @@
   .channel-card-container .channel-card-container-heading {
     text-align: center;
     border-bottom: .2em dashed; }
-  .channel-card-container .channel-card-container-body .channel-logo {
-    position: absolute;
-    border-radius: 0 0 0 .5em;
-    left: 0;
-    bottom: 0;
-    height: 80%;
-    width: 25%; }
-  .channel-card-container .channel-card-container-body .text-container {
-    padding-left: 5em;
-    text-align: center; }
+  .channel-card-container .channel-card-container-body {
+    position: relative; }
+    .channel-card-container .channel-card-container-body .channel-logo {
+      position: absolute;
+      border-radius: 0 0 0 .5em;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 30%; }
+    .channel-card-container .channel-card-container-body .text-container {
+      display: float;
+      padding-left: 7em;
+      text-align: center; }
+      .channel-card-container .channel-card-container-body .text-container .channel-name {
+        padding: .3em 0 .3em 0;
+        margin: 0; }
+      .channel-card-container .channel-card-container-body .text-container .channel-game {
+        word-wrap: break-word; }

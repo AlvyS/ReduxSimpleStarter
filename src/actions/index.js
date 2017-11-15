@@ -1,20 +1,8 @@
-// Action Creator, 'Broadcasts'. Defines what type to listen for, sends payload/data.
-export const selectChannel = (channel) => {
-  console.log(`Clicked on ${channel.channelName}`)
-  return {
-    type: 'CHANNEL_SELECTED',
-    payload: channel
-  }
-}
+// Action Creator, 'Broadcaster'. Defines what type to listen for, sends payload/data.
 
-export function fetchChannel() {
-  console.log(`Clicked on fetchDATA`)
+export const addStreamer = (data) => {
   return {
-    type: 'FETCH_CHANNEL',
-    payload: {
-      id: '1',
-      name: "Truztout",
-      followers: "101"
-    }
+    type: 'ADD_STREAMER',
+    payload: {data}
   }
 }
