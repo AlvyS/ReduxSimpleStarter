@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import { Grid, Row, Col} from 'react-bootstrap';
+import { Grid, Row, Col, Panel } from 'react-bootstrap';
 import { fetchChannel } from '../actions/index';
 import Channel from '../components/channel';
 
 
 class ChannelList extends Component {
 
-  getChannelList() {
+  createChannelList() {
     return this.props.channels.map((channel, i) => {
       console.log('channel', channel)
       return (
@@ -20,12 +20,12 @@ class ChannelList extends Component {
   }
 
   render() {
-    const getChannelList = this.getChannelList();
+    const createChannelList = this.createChannelList();
     console.log('props from channel-list', this.props.channels)
     return (
       <Grid bsClass='channel-list-container'>
         <Row className = 'channel-row'>
-          {getChannelList}
+          {createChannelList}
         </Row>
       </Grid>
     );

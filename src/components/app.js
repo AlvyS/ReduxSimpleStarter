@@ -1,5 +1,6 @@
 import React from 'react';
 
+// import Sidebar from '../components/sidebar';
 import Navbar from '../components/navbar-header';
 import ChannelList from '../components/channel-list';
 

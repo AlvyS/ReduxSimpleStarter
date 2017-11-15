@@ -1,12 +1,38 @@
-.channel-logo {
-  img {
-    position: absolute;
-    border-radius: .5em 0 0 .5em;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    width: 25%;
+.channel-card-container {
+  position: relative;
+  background-color: $red;
+  margin-bottom: 1em;
+  background-color: $lightblue ;
+  border: .5em solid $black;
+  border-radius: 1em;
+
+  .channel-card-container-heading{
+    text-align: center;
+    border-bottom: .2em dashed;
   }
+
+  .channel-card-container-body {
+    .channel-logo {
+      position: absolute;
+      border-radius: 0 0 0 .5em;
+      left: 0;
+      bottom: 0;
+      height: 80%;
+      width: 25%;
+    }
+    .text-container {
+      padding-left: 5em;
+      text-align: center;
+      .channel-name{
+
+      }
+      .channel-game{
+
+      }
+      .channel-followers{
+
+      }
+    }
+  }
+
 }
