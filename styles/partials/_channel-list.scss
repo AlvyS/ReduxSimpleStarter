@@ -1,0 +1,22 @@
+.channel-list-container {
+  border: 1em solid $yellow;
+  border-radius: 1em;
+  
+  .channel-row {
+    padding-bottom: .5em;
+
+    .channel-container {
+      position: relative;
+      margin-bottom: 1em;
+      background-color: $lightblue ;
+      border: .3em solid $black;
+      border-radius: 1em;
+      
+      .text-container {
+        padding-left: 5em;
+        text-align: center;
+      }
+    }
+  }
+  
+}

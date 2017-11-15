@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import combinedReducers from './reducers';
+
 import App from './components/app';
+import combinedReducers from './reducers';
 
 const createdStore = createStore(combinedReducers);
 

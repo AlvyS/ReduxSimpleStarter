@@ -1,0 +1,24 @@
+.channel-list-container {
+  border: 1em solid yellow;
+  border-radius: 1em; }
+  .channel-list-container .channel-row {
+    padding-bottom: .5em; }
+    .channel-list-container .channel-row .channel-container {
+      position: relative;
+      margin-bottom: 1em;
+      background-color: rgba(188, 228, 229, 0.7);
+      border: 0.3em solid black;
+      border-radius: 1em; }
+      .channel-list-container .channel-row .channel-container .text-container {
+        padding-left: 5em;
+        text-align: center; }
+
+.channel-logo img {
+  position: absolute;
+  border-radius: .5em 0 0 .5em;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 25%; }

@@ -6,3 +6,15 @@ export const selectChannel = (channel) => {
     payload: channel
   }
 }
+
+export function fetchChannel() {
+  console.log(`Clicked on fetchDATA`)
+  return {
+    type: 'FETCH_CHANNEL',
+    payload: {
+      id: '1',
+      name: "Truztout",
+      followers: "101"
+    }
+  }
+}
