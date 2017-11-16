@@ -10,6 +10,9 @@ import Channel from '../components/channel';
 
 class ChannelList extends Component {
 
+  componentDidMount() {
+  }
+
   createChannelList() {
     return this.props.channels.map((channel, i) => {
       return (
@@ -48,7 +51,7 @@ function mapStateToProps(state) {
 
 // Allows imported action to affect the container(smart), not just regular component
 function matchDispatchToProps(dispatch) {
-  return bindActionCreators({fetchStreams: fetchStreams, updateChannels: updateChannels}, dispatch)
+  return bindActionCreators({fetchStreams: fetchStreams}, dispatch)
 }
 
 // Connect channel list along with data from store. Makes component 'smart'

@@ -1,28 +1,19 @@
-// const initialStreamers = ['truztout', 'biwwie', 'nl_krippi']
+// const initialStreamerNames = ['truztout', 'biwwie', 'nl_krippi']
+import { RECEIVE_STREAMER } from '../actions/actions';
 
 const initialState = {
-  streamers: '',
-  channels: [],
+  channels: []
 }
 
 const streamsReducer = (state=initialState, action) => {
   switch (action.type) {
-
-    case 'FETCHING_STREAMS': {
-      return {...state, streamers: action.payload.stream.channel.name }
+    case RECEIVE_STREAMER: 
+      return {...state, 
+        channels: [...state.channels, action.payload.stream.channel]
+      }
       break;
-    }
-    case 'UPDATING_CHANNELS':
-      return {...state, channels: [...state, action.payload.stream.channel]}
-      break;
-      
-    case 'ADD_STREAMER': {
-      return {...state, streamers}
-      break;
-    }
-    
     default:
-    return state;
+      return state;
   }
 }
 

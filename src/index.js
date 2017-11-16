@@ -8,8 +8,7 @@ import {createLogger} from 'redux-logger';
 
 import App from './components/app';
 import combinedReducers from './reducers';
-import { initialState } from './actions/index';
-import { fetchStreams, updateChannels } from './api/twitch-api';
+import { fetchStreams, updateChannels } from './actions/actions';
 
 
 const middleware = applyMiddleware(thunk, createLogger());
@@ -18,7 +17,7 @@ const createdStore = createStore(
   middleware
 );
 
-createdStore.dispatch(fetchStreams());
+createdStore.dispatch(fetchStreams(['Yoda', 'TSM_Dyrus']));
 
 ReactDOM.render(
   <Provider store={createdStore}>
