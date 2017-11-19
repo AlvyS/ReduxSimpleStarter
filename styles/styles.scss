@@ -1,9 +1,11 @@
 @import './partials/variables';
 @import './partials/channel-list';
 @import './partials/channel';
+@import './partials/featured-list';
+@import './partials/featured-channel';
 @import './partials/sidebar';
 @import './partials/navbar';
 
 #root {
-
+  background-color: $beige;
 }

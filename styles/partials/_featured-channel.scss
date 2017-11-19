@@ -1,4 +1,4 @@
-.channel-card-container {
+.featured-card-container {
   position: relative;
   background-color: $red;
   margin-bottom: 1em;
@@ -6,37 +6,43 @@
   border: .4em solid $black;
   border-radius: 1em;
 
-  .channel-card-container-heading{
+  .featured-card-container-heading{
     text-align: center;
     border-bottom: .2em dashed;
   }
 
-  .channel-card-container-body {
+  .featured-card-container-body {
     position: relative;
-    .channel-logo {
+    .featured-logo {
       position: absolute;
-      border-radius: 0 0 0 .5em;
+      background-color: $white;
+      border-radius: .5em 0 0 .5em;
       left: 0;
       bottom: 0;
       height: 100%;
       width: 25%;
     }
-    .text-container {
+    .featured-text-container {
       display: float;
       padding-left: 7em;
       text-align: center;
-      .channel-name{
+      .featured-name{
         padding: .3em 0 .3em 0;
         margin: 0;
         text-align: center;
       }
-      .channel-game{
+      .featured-game{
         word-wrap: break-word;
 
       }
-      .button-delete {
+      .featured-button-delete {
+        border-radius: 0em .3em 0em 0em;
         position: absolute;
-        background-color: $red;
+        right: 0;
+        top: 0;
+      }
+      .featured-button-watch {
+        border-radius: 0em 0em .5em 0em;
       }
     }
   }

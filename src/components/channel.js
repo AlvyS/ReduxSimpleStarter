@@ -11,11 +11,10 @@ class Channel extends Component {
   }
 
   createChannelCard() {
-    let channel = this.props.channel;
-
+    console.log('props in chan', this.props)
+    let {channel} = this.props;
     return (
-      <Panel bsClass='channel-card-container' 
-        header={channel ? `${channel.name} is currently streaming!` : `${channel.name} is offline :(`}>
+      <Panel bsClass='channel-card-container'>
         <Media > 
           <Media.Left xsHidden>
             <img className='channel-logo' src={channel.logo}/> 
@@ -36,7 +35,6 @@ class Channel extends Component {
   } 
 
   render() {
-    console.log('props in channel', this.props.channel)
     return ( 
       <div>
         {this.createChannelCard()}
