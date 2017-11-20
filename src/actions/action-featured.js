@@ -11,6 +11,6 @@ export function fetchFeatured() {
   return function(dispatch) {
       axios.get(`${apiURL}streams/featured/?client_id=${CLIENT_ID}`)
       .then(response => dispatch(receiveFeatured(response)))
-      .catch(error => console.log(error.response))
+      .catch(error => console.log('error is', error.response))
   }
 }

@@ -13,7 +13,9 @@ const streamsReducer = (state=initialState, action) => {
       }
       break;
     case 'ADD_STREAMER':
-      return {...state, streamerName: [...state.streamerName, action.payload]}
+      return {...state, 
+        streamerName: [...state.streamerName, action.payload]
+      }
       break;
     default:
       return state;

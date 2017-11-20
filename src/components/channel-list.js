@@ -1,18 +1,12 @@
 import React, {Component} from 'react';
-import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
 import { Grid, Row, Col, Panel } from 'react-bootstrap';
 
-import { fetchStreams } from '../actions/actions';
 import Channel from '../components/channel';
 
 
 class ChannelList extends Component {
-
-  componentDidMount() {
-    const {fetchStreams} = this.props
-    fetchStreams(this.props.streams);
-  }
 
   createChannelList() {
     return this.props.channels.map((channel, i) => {
@@ -49,7 +43,7 @@ function mapStateToProps(state) {
 
 // Allows imported action to affect the container(smart), not just regular component
 function matchDispatchToProps(dispatch) {
-  return bindActionCreators({fetchStreams: fetchStreams}, dispatch)
+  return bindActionCreators({}, dispatch)
 }
 
 // Connect channel list along with data from store. Makes component 'smart'

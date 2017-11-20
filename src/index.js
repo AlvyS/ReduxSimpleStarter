@@ -8,7 +8,6 @@ import {createLogger} from 'redux-logger';
 
 import App from './components/app';
 import combinedReducers from './reducers';
-import { fetchStreams } from './actions/actions';
 
 
 const middleware = applyMiddleware(thunk, createLogger());
